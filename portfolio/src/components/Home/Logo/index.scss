@@ -1,0 +1,39 @@
+.logo-container {
+    z-index: 0;
+    width: 400px;
+    height: 609px;
+    position: absolute;
+       right: 15%;
+    top: -20%;
+    left: auto;
+    margin: auto;
+
+    svg {
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        transform: rotateZ(10deg) !important;
+    }
+
+    .solid-logo {
+        position: absolute;
+        top: 12%;
+        
+        border: 2px dotted #f7ef00;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        opacity: 10;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        transform: rotateZ(00deg);
+        z-index: 1;
+    }
+}
+
+.svg-container {
+    stroke: #ffd700;
+    stroke-width: 10px;
+}

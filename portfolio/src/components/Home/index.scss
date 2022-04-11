@@ -2,10 +2,60 @@
     .text-zone {
         position: absolute;
         left: 10%;
-        top: 50%;
+        top: 20%;
         transform: translateY(-50%);
         width: 40%;
         max-height: 90%;
+    }
+
+    .projects-zone {
+        position: absolute;
+        top: 45%;
+        left: 10%;
+        width: 76%;
+        
+        .project-card {
+            margin: 10px;
+            .preview-image {
+                height: 250px;
+                width: 95%;
+                margin: 5px;
+                object-fit: cover;
+                border: 1px dotted rgba(255, 255, 0, 0.39);
+            }
+
+            .inner-card {
+                position: relative;
+                top: -25px;
+            }
+
+            h2 {
+                color: white;
+                text-align: center;
+                font-size: 18px;
+            }
+
+            p {
+                color: rgb(166, 161, 161);
+                text-align: center;
+                animation: fadeIn 1s 1.8s backwards;
+                font-size: 14px;
+                margin: 5px;
+            }
+        }
+
+        .row {
+            position: relative;
+            top: 30px;
+            display: flex;
+            height: 400px;
+        }
+
+        .column {
+            width: 33%;
+            
+            background-color: rgba(0, 187, 255, 0.031);
+        }
     }
 
     h1 {
@@ -17,7 +67,7 @@
         font-weight: 400;
 
         &:before {
-            content: '<h1>';
+            content: '';
             font-family: 'La Belle Aurore', cursive;
             color: #ffd700;
             font-size: 18px;
@@ -28,7 +78,7 @@
         }
 
         &:after {
-            content: '<h1/>';
+            content: '';
             font-family: 'La Belle Aurore', cursive;
             color: #ffd700;
             font-size: 18px;

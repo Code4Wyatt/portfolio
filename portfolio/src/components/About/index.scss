@@ -5,6 +5,7 @@
     padding-top: 18%;
     margin-left: 0;
     position: absolute;
+    
     right: 0;
     overflow: hidden;
 }
@@ -20,6 +21,7 @@
 
     div {
         position: absolute;
+        top: 0;
         width: 200px;
         height: 200px;
         border: 1px solid #ccc;
@@ -49,7 +51,7 @@
 
     .face4 {
         transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-        color: #5ed4f4;
+        color: #5ef477;
     }
 
     .face5 {

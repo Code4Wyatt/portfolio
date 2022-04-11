@@ -40,6 +40,8 @@
 
 .container.contact-page,
 .container.about-page {
+    position: absolute;
+    top: -20%;
     .text-zone {
         position: absolute;
         left: 10%;

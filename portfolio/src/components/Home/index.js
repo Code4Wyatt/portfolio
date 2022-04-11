@@ -7,6 +7,8 @@ import Logo from "./Logo"
 import UnisonPreview from "../../assets/images/unisonpreview.png"
 import ScotHostsPreview from "../../assets/images/scothostspreview.png"
 import NetflixPreview from "../../assets/images/net.jpg"
+import Loader from 'react-loaders'
+
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = ['a', 'u', 'l']
@@ -18,7 +20,8 @@ const Home = () => {
     }, 4000)
   }, [])
 
- return (
+  return (
+   <>
      <div className="container home-page">
          <div className="text-zone">
              <h1>Hi, <br /> I'm
@@ -28,7 +31,7 @@ const Home = () => {
              <br />
                    <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={15} />
              </h1>
-             <h2>Full Stack Developer</h2>
+             <h2>Glasgow, Scotland</h2>
              <Link to="/contact" className="flat-button">CONTACT ME</Link>
         </div>
      <Logo />
@@ -68,7 +71,9 @@ const Home = () => {
          </div>
        </div>
      </div>
-     </div>
+   </div>
+   <Loader type="pacman" />
+   </>
  )
 }
 

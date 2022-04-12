@@ -35,7 +35,6 @@ const Contact = () => {
           alert('Failed to send the message, please try again')
         }
       )
-    e.target.reset()
   }
 
   return (

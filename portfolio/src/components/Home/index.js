@@ -6,7 +6,7 @@ import { useState, useEffect } from "react"
 import Logo from "./Logo"
 import UnisonPreview from "../../assets/images/unisonpreview.png"
 import ScotHostsPreview from "../../assets/images/scothostspreview.png"
-import NetflixPreview from "../../assets/images/net.jpg"
+import AirBnbPreview from "../../assets/images/airbnb.png"
 import Loader from 'react-loaders'
 
 const Home = () => {
@@ -50,7 +50,7 @@ const Home = () => {
          </div>
          <div className="column">
               <div className="project-card">
-             <img src={ScotHostsPreview} alt="ScotHosts.org Preview" className="preview-image" />
+             <a  href="https://scothosts.org/"><img src={ScotHostsPreview} alt="ScotHosts.org Preview" className="preview-image"/></a>
              <div className="inner-card">
                <h2>ScotHosts</h2>
                <p>ScotHosts.org, charity project for an organisation specialising in the relocation of Ukranian refugees to Scotland.</p>
@@ -61,11 +61,11 @@ const Home = () => {
          </div>
          <div className="column">
               <div className="project-card">
-             <img src={NetflixPreview} alt="Unison Preview" className="preview-image" />
+             <a href="https://airbnb-orcin.vercel.app/"><img src={AirBnbPreview} alt="Unison Preview" className="preview-image" /></a>
              <div className="inner-card">
-               <h2>Netflix</h2>
-               <p>Full Stack Netflix Clone</p>
-               <p>Technologies Used: React, Redux, Express, Node.JS, MongoDB, Cloudinary, JWTAuth</p>
+               <h2>AirBnb Clone</h2>
+               <p>Front End Clone of AirBnB style website</p>
+               <p>Technologies Used: React, MaterialUI</p>
              </div>
            </div>
          </div>
